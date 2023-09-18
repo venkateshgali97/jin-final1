@@ -8,7 +8,6 @@ const addProject = async(req,res) =>{
 
         // Extract the admin data from the request body
         const {project_name, start_date, end_date} = req.body;
-        console.log(project_name, start_date, end_date)
 
         // checking project is already existed or not
         const findProject = await projects.findOne({

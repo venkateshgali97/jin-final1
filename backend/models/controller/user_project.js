@@ -6,29 +6,22 @@ const addProject_addUser = async (req, res) => {
 
   try {
 
-    let { users, project_id } = req.body; // Use 'let' instead of 'const'
+    let { users, project_id } = req.body;
 
-
-
+    console.log(users, project_id , " Yhis is users and project_id")
     if (!Array.isArray(users)) {
       users = [users];
-
     }
+    console.log(users, "this is converting to users")
     users.forEach(async (userId) => { // Use a different variable name here, e.g., 'userId'
       const newData = await user_project.create({
         project_id: project_id,
         user_id: userId, // Use 'userId' as the iterator variable
       });
-
-      // Handle newData if needed
-
+     
     });
 
-
-
-    // Send a response or handle success
-
-    res.status(200).json({ message: 'Associations created successfully' });
+    res.status(200).json({ message: 'Associations created successfully'});
 
   } catch (error) {
 
@@ -40,8 +33,7 @@ const addProject_addUser = async (req, res) => {
 
   }
 
-};
-
+}
 
 
 // const projectDetailsOfLoginUser = async(req, res) => {

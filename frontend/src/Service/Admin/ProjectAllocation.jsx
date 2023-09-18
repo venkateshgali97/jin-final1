@@ -33,7 +33,7 @@ class ProjectAllocationApi{
         project_id : proj_id 
       }
         try {
-          const response = await axios.post("http://localhost:3000/user-project",info, this.axisConfig);
+          const response = await axios.post("http://localhost:3000/userProject",info, this.axisConfig);
           return response.status
           
       
