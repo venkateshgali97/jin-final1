@@ -309,7 +309,7 @@ function Users() {
                         <Form.Group controlId="contact_no">
                             <Form.Label>Contact-no:</Form.Label>
                             <Form.Control
-                                type="text"
+                                type="number"
                                 name="contact_no"
                                 value={newUser.contact_no}
                                 onChange={handleInputChange}

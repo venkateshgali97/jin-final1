@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "6303377457@YbL",
+    "password": "123456",
     "database": "jman",
     "host": "localhost",
     "dialect": "mysql"

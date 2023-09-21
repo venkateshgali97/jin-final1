@@ -80,6 +80,23 @@ const UserProfile_ProjectAllocation = () => {
     // }, [userData]);
 
 
+    useEffect(() => {
+
+        setUserData(userData);
+
+        // Extract the initial letter and set it when user data changes
+
+        if (userData.name) {
+
+            const initials = userData.name.split(' ').map(part => part.charAt(0).toUpperCase()).join('');
+
+            setInitialLetter(initials);
+
+        }
+
+    }, [userData]);
+
+
     // useEffect(() => {
     //   // This useEffect can be used for other data fetching operations
     //   setTimeout(() => {
@@ -180,7 +197,7 @@ const UserProfile_ProjectAllocation = () => {
                 <div className='btn'>
 
                 </div>
-                {isPopupVisible && (
+                {/* {isPopupVisible && (
                     <div className='popup'>
                         <ContactForm />
                         <div className='button-container'>
@@ -189,7 +206,7 @@ const UserProfile_ProjectAllocation = () => {
                             </button>
                         </div>
                     </div>
-                )}
+                )} */}
 
                 <div className='project-details'>
                     <div className='table-container'>

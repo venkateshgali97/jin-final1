@@ -48,8 +48,8 @@ button.accordion-button-custom.collapsed {
   /* Style the accordion items (adjust styles as needed) */
  .users-accordion-item {
     /* Add your styles for accordion items here */
-    padding: 10px;
-    border: 1px solid #ccc;
+    /* padding: 10px;
+    border: 1px solid #ccc; */
     background-color: #f9f9f9;
     margin: 5px;
 }

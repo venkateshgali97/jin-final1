@@ -6,7 +6,7 @@
   /* Sidebar/Navigation */
   .sidebar {
     width: 12%;
-    background-image: linear-gradient(#19105b, #472067, #7c3375, #FF6196) !important;
+    background-image: linear-gradient(#19105b, #472067, #7c3375, #FF6196);
     color: #fff;
     padding: 20px;
     
@@ -41,4 +41,6 @@
   
   
   
-  
+  .logout{
+    cursor: pointer;
+  }
